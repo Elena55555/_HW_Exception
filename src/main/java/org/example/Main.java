@@ -10,7 +10,6 @@ public class Main {
     public static void task1ArithmeticException(int x) throws ArithmeticException {
         // Checking an integer for parity
         if (x % 2 == 0) {
-            // Generating an exception if the number is even
             System.out.println("The number is even");
         } else {
                     // Generating an exception if the number is odd
