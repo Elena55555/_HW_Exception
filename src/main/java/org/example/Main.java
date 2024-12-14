@@ -11,7 +11,7 @@ public class Main {
         // Checking an integer for parity
         if (x % 2 == 0) {
             // Generating an exception if the number is even
-            throw new ArithmeticException(x + " - the number is even");
+            System.out.println("The number is even");
         } else {
                     // Generating an exception if the number is odd
                     throw new ArithmeticException(x + " - the number is odd");
