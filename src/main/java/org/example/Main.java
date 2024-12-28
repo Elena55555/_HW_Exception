@@ -2,25 +2,29 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("First task ");
+        System.out.println("First task");
+        task1ArithmeticException(1);
+        System.out.println("Second task");
         System.out.println(task2IsInteger("133hhvjv"));
         System.out.println(" ");
-        System.out.println("Second task ");
-        task1ArithmeticException(10);
         System.out.println(" ");
-        System.out.println("Second task (second way) ");
+        System.out.println("Second task (second way)");
         System.out.println(task3IsInteger("fjhgchxdxhtrs"));
     }
 
     public static void task1ArithmeticException(int x) throws ArithmeticException {
         // Checking an integer for parity
-        if (x % 2 == 0) {
-            System.out.println("The number is even");
-        } else {
-            // Generating an exception if the number is odd
-            throw new ArithmeticException(x + " - the number is odd");
+        try {
+            if (x % 2 == 0) {
+                System.out.println("The number is even");
+            } else {
+                System.out.println("The number is odd");
+            }
+         } catch (ArithmeticException e) {
+             System.out.println("An arithmetic error has been made");
         }
-    }
+     }
+
 
     /**
      * The method  checks if the string is a number
